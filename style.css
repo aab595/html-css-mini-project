@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    background-color: #EAEDF3;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    height: 200px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header-img {
+    float: left;
+    height: 100%;
+}
+
+.header-nav {
+    width: 100%;
+    float: right;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-nav-link {
+    width: 100%;
+    background-color: #4A81C4;
+    margin: 50px 37px;
+    padding: 45px;
+    box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.header-nav-link a {
+    font-size: 1.5em;
+    margin: 0 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.header-nav-link a:hover {
+    /* text-decoration: underline #fff 3px; */
+    font-weight: 800;
+    border: 3px solid #fff;
+}
+
+.main-social {
+    clear: both;
+    position: fixed;
+    top: 50vh;
+    left: 0;
+    bottom: 50vh;
+}
+
+.main-social-item a img {
+    width: 100px;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    margin-left: 125px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+}
+
+.main-content {
+    padding: 50px;
+    background-color: #fff;
+    margin-right: 25px;
+    border-radius: 15px;
+}
+
+.main-content-breadcrumb a {
+    font-size: 1.3em;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+}
+
+.main-content-title {
+    margin-top: 5px;
+    font-size: 2.7em;
+    color: #4A81C4;
+    font-weight: bold;
+}
+
+.main-content img {
+    margin: auto;
+    width: 100%;
+}
+
+.main-content p {
+    font-size: 1.7em;
+    text-align: justify;
+}
+
+.click-here {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 900;
+}
+
+.click-here:hover {
+    text-decoration: underline #54585e 3px wavy;
+}
+
+.main-aside1 {
+    background-color: #fff;
+    margin-right: 20px;
+    padding: 25px;
+    border-radius: 15px;
+    width: 300px;
+    height: 300px;
+}
+
+.main-aside1 h3 {
+    background-color: #7200FE;
+    border-radius: 25px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.main-aside1 p {
+    margin: 15px 0;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.main-aside1 p a {
+    text-decoration: none;
+}
+
+.main-aside1 p a:hover {
+    text-decoration: underline #7200FE 3px wavy;
+}
+
+.main-aside2 {
+    background-color: #fff;
+    margin-right: 20px;
+    padding: 25px;
+    border-radius: 15px;
+    width: 300px;
+    height: 300px;
+    margin-top: 15px;
+}
+
+.main-aside2 h3 {
+    background-color: #D44699;
+    border-radius: 25px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.main-aside2 p {
+    margin: 15px 0;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.main-aside2 p a {
+    text-decoration: none;
+}
+
+.main-aside2 p a:hover {
+    text-decoration: underline #D44699 3px wavy;
+}
+
+.footer {
+    background-color: #4A81C4;
+    height: 150px;
+    text-align: center;
+    color: #fff;
+}
+
+.footer-content {
+    margin: 50px 0;
+}
+
+.footer-content p {
+    margin: 10px 0;
+    font-size: 1.3em;
+}
+
+@media screen and (max-width: 1430px) {
+    .main {
+        flex-direction: column;
+    }
+    .main-aside1 {
+        margin-top: 15px;
+        float: left;
+        width: 40%;
+        margin-right: 0;
+    }
+    .main-aside2 {
+        float: right;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .main-aside1, .main-aside2 {
+        width: calc(100% - 75px);
+    }
+}
