@@ -81,10 +81,6 @@ body {
     padding: 0;
 }
 
-.main-social-item a img:hover {
-    transition: .2s;
-}
-
 .main {
     margin-left: 125px;
     margin-top: 25px;
