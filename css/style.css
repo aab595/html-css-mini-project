@@ -71,12 +71,18 @@ body {
     top: 50vh;
     left: 0;
     bottom: 50vh;
+    margin-left: 5px;
 }
 
 .main-social-item a img {
-    width: 100px;
+    width: 70px;
+    height: 70px;
     margin: 0;
     padding: 0;
+}
+
+.main-social-item a img:hover {
+    transition: .2s;
 }
 
 .main {
@@ -157,6 +163,7 @@ body {
 
 .main-aside1 p a {
     text-decoration: none;
+    color: #000;
 }
 
 .main-aside1 p a:hover {
@@ -193,6 +200,7 @@ body {
 
 .main-aside2 p a {
     text-decoration: none;
+    color: #000;
 }
 
 .main-aside2 p a:hover {
